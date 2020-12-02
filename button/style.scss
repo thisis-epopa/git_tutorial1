@@ -1,0 +1,33 @@
+$cWhite: white;
+$cBlack: black;
+
+.box {
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+}
+
+.box1 {
+    display: inline-block;
+    background-color: green;
+}
+#container {
+    text-align: center;
+}
+
+.btn {
+    background-color: $cWhite;
+    color: black;
+    border: 2px dotted $cBlack;
+    padding: 10px 40px 10px 40px;
+    margin: 10px 40px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s;
+
+
+    &:hover {
+        background-color: $cBlack;
+        color: $cWhite;
+    }
+}
