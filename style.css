@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+}
+
+.box {
+  text-align: center;
+}
+
+.box .btn {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  border: 1px solid black;
+  padding: 10px 40px;
+  margin: 10px 40px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.box .btn:hover {
+  color: red;
+  -webkit-transform: scale(1.5) rotate(30deg);
+          transform: scale(1.5) rotate(30deg);
+}
+
+.box .btn:hover span {
+  -webkit-transform: none;
+          transform: none;
+  background-color: cadetblue;
+}
+
+.box .btn span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  z-index: -1;
+}
+/*# sourceMappingURL=style.css.map */
